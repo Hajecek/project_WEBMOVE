@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    transition: background-color 1s ease;
+    
+}
+
+/*nav*/
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.001px solid rgba(180, 180, 180, 0.13);
+    text-decoration: none;
+    transition: top 0.4s;
+}
+
+.nav_positions{
+    position: relative;
+    display: flex;
+    margin: 0;
+//    background: red;
+    width: 60%;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.logo_small_left img{
+    position: absolute;top: -7px;left: 20px;
+    width: 70px;
+    height: auto;
+    text-decoration: none;
+}
+
+.menu {
+    position: relative;top: 0;right: 0;
+    width: 40%;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    list-style-type:none;
+    
+}
+
+#magic-line { 
+	position: absolute;
+	bottom: 6px; 
+	left: 0; 
+	width: 50px; 
+	height: 2px; 
+	background: #fe4902;
+}
+.current_page_item a { 
+	color: white !important; 
+}
+
+
+#example-one a { 
+	color: #bbb; 
+    font-size: .875rem;
+	float: left;
+	padding: 6px 10px 4px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#example-one li { 
+	display: inline-block;	
+}
+#example-one { 
+	margin: 0 auto; 
+	list-style: none; 
+	position: relative; 
+    width: 100%;
+    height:auto;
+    padding: 30px;
+    font-size: .875rem;
+    font-family: "Oswald",sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    line-height: 20px;
+   
+}
+.group:after { visibility: hidden; display: block; content: ""; clear: both; height: 0; }
+*:first-child+html .group { zoom: 1; }
+
+.navbar-fixed-top.scrolled {
+    background-color: rgba(28, 35, 46, 0.363) !important;
+  }
+  
+  .navbar-fixed-top.scrolled .nav-link {
+    color:#555;
+    transition: background-color 1s ease;
+  }
+
+
+
+  /*mobile menu*/
+
+ /*konec mobile menu*/
+
+
+
+
+/*konec nav*/
+
+
+.section1{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url(../design.svg);
+}
+
+
+
+
+
+
+
+/*mobile*/
+@media(max-width:768px){
+    .menu{
+        display: none;
+    }
+    .logo_small_left img{
+        position: absolute;top: 0px;left: 0px;
+        width: 50px;
+        height: auto;
+        text-decoration: none;
+    }
+
+    .nav_positions{
+        width: 90%;
+    }
+
+    #navbar{
+        height: 70px;
+    }
+}
+
+
+/*konec mobile*/

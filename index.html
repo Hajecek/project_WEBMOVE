@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- css linky-->
+     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" type="text/css">
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="./styles/main.css">
+    <!-- css linky-->
+ 
+ <!-- js linky-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="./js/scrollfunctions.js"></script>
+ <!-- js linky-->
+    <title>WEBMOVE</title>
+</head>
+
+<body>
+   
+ 
+    asdasd
+
+
+    <div class="section1">
+
+    <div id="navbar" class="navbar navbar-dark bg-primary navbar-fixed-top">
+            <div class="nav_positions">
+                <div class="logo_small_left"><img src="./img/logo_small.svg" alt=""></div>
+                    <div class="menu">
+                        <div class="group" id="example-one">
+                            <li class="current_page_item">
+                                <a href="#">Domů</a>
+                              </li>
+                              <li><a href="#">Reviews</a></li>
+                              <li><a href="#">ahoj</a></li>
+                              <li><a href="#">Videos</a></li>
+                              <li><a href="#">Photos</a></li>
+                        </div>
+                    </div>
+            </div>
+    </div>
+ 
+</div>
+
+
+   
+
+   
+
+
+
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        setTimeout(function(){  document.getElementById("navbar").style.top = "-90px"; },400);
+       
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+
+
+<!--script konec-->
+</body>
+
+  <!--scripty-->
+  <script src="./js/magicline.js"></script>
+  <script src="./js/mobile_menu.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.js/1.9.2/snap.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.color-RGBa-patch.js"></script>
+      <!--scripty-->
+
+</html>
