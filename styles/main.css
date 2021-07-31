@@ -186,6 +186,9 @@ section {
     top: 0;
     height: 70px;
   }
+  .section1 {
+    color: red;
+  }
 }
 
 /*konec mobile*/
