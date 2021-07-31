@@ -13,7 +13,7 @@ $(function () {
     var scrollTop = $(window).scrollTop();
     if(scrollTop == 0){
          $('.logo_small_left').css({ "display" : "block",});
-         $('.navbar-fixed-top').css({ "top" : "0",});
+         $('.navbar-fixed-top').css({ "position" : "fixed", "top" : "0px"});
     }
     else {
          $('.logo_small_left').css({ "display" : "none",});
