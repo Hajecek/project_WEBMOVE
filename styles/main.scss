@@ -125,6 +125,13 @@ body{
 
 /*konec nav*/
 
+/* styl sekce pro vsechny sekce*/
+section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
 
 .section1{
     position: relative;
@@ -162,6 +169,9 @@ background: url(../img/ahoj.png);
     #navbar{
         top: 0;
         height: 70px;
+    }
+    .section1{
+        //
     }
 }
 

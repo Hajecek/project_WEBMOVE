@@ -143,6 +143,13 @@ body {
 /*mobile menu*/
 /*konec mobile menu*/
 /*konec nav*/
+/* styl sekce pro vsechny sekce*/
+section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
 .section1 {
   position: relative;
   width: 100vw;
