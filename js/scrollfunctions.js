@@ -14,7 +14,7 @@ $(function () {
     if(scrollTop <= 0){
          $('.logo_small_left').css({ "display" : "inline",});
          $('.navbar-fixed-top').css({ "position" : "fixed", "top" : "0px"});
-         setTimeout(function(){  $('#navbar').css({ "background" : "transparent",}); }, 1000);
+         setTimeout(function(){  $('#navbar').css({ "background" : "transparent",}); }, 400);
     }
     else {
          $('.logo_small_left').css({ "display" : "flex",});
