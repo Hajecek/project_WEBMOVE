@@ -2,7 +2,6 @@
 
 *{
     text-decoration: none;
-    color: white;
     font-size: 18px;
 }
 
@@ -52,7 +51,7 @@ body{
 
 .menu {
     position: relative;top: 0;right: 0;
-    width: 40%;
+  //  width: 40%;
     display: flex;
     margin: 0;
     align-items: center;
@@ -132,8 +131,12 @@ body{
     background: url(../design.svg);
 }
 
-
-
+.aa{
+ position: relative;z-index: 5000;top: 20px;
+ width: 100vw;
+ height: 100vh;
+background: url(../img/ahoj.png);
+}
 
 
 

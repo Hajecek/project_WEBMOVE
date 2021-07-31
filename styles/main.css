@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 * {
   text-decoration: none;
-  color: white;
   font-size: 18px;
 }
 
@@ -63,7 +62,6 @@ body {
   position: relative;
   top: 0;
   right: 0;
-  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,6 +146,15 @@ body {
   width: 100vw;
   height: 100vh;
   background: url(../design.svg);
+}
+
+.aa {
+  position: relative;
+  z-index: 5000;
+  top: 20px;
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/ahoj.png);
 }
 
 /*mobile*/
