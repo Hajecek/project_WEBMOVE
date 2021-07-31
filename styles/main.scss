@@ -65,7 +65,7 @@ body{
 	position: absolute;
 	bottom: 6px; 
 	left: 0; 
-	width: 50px; 
+	width: auto; 
 	height: 2px; 
 	background: #fe4902;
 }
@@ -83,13 +83,15 @@ body{
 	text-transform: uppercase;
 }
 #example-one li { 
+    margin: 0px;
+    padding: 0px;
 	display: inline-block;	
 }
 #example-one { 
 	margin: 0 auto; 
 	list-style: none; 
 	position: relative; 
-    width: 100%;
+    width: auto;
     height:auto;
     padding: 30px;
     font-size: .875rem;
