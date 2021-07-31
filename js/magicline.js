@@ -6,7 +6,7 @@ $mainNav2 = $("#example-two");
     */
 
 /* Add Magic Line markup via JavaScript, because it ain't gonna work without */
-$("li a").append("<span id='magic-line'></span>");
+$(".current_page_item a").append("<span id='magic-line'></span>");
 
 /* Cache it */
 var $magicLine = $("#magic-line");
