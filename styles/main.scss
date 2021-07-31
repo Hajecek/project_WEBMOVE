@@ -15,6 +15,10 @@ body{
     
 }
 
+.navbar-fixed-top{
+    position: fixed;top: 0px;
+}
+
 /*nav*/
 #navbar{
     position: fixed;
@@ -140,12 +144,6 @@ section{
     background: url(../design.svg);
 }
 
-.aa{
- position: relative;z-index: 5000;top: 20px;
- width: 100vw;
- height: 100vh;
-background: url(../img/ahoj.png);
-}
 
 
 
