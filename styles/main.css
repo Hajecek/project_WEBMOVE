@@ -82,8 +82,8 @@ body {
 
 #magic-line {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  bottom: -1px;
+  left: -2px;
   width: auto;
   overflow: hidden;
   height: 2px;
@@ -103,30 +103,37 @@ body {
   text-transform: uppercase;
   width: auto;
   overflow: hidden;
+  padding: 30px 15px;
 }
 
 #example-one li {
   width: auto;
   overflow: hidden;
-  margin: 0px;
-  padding: 0px;
+  margin-right: 0px;
   display: inline-block;
+}
+
+#example-one li:last-child {
+  border-right: 0.001px solid rgba(180, 180, 180, 0.13);
+  margin-left: -4px;
+}
+
+#example-one li:nth-child(2n+5) {
+  border-left: 0.001px solid rgba(180, 180, 180, 0.13);
+  border-right: 0.001px solid rgba(180, 180, 180, 0.13);
 }
 
 #example-one {
   margin: 0 auto;
   list-style: none;
-  position: relative;
   width: 100%;
   height: auto;
   overflow: hidden;
-  padding: 24px;
   font-size: .875rem;
   font-family: "Oswald",sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   color: white;
-  line-height: 20px;
 }
 
 .group:after {
@@ -160,17 +167,64 @@ body {
 
 /*konec nav*/
 /* styl sekce pro vsechny sekce*/
-section {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-
 .section1 {
   position: relative;
-  width: 100vw;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: url(../design.svg);
+}
+
+.content-middle {
+  position: relative;
+  top: 30px;
+  width: 70%;
+  height: 80%;
+  background: rgba(255, 0, 0, 0.103);
+  display: inline-block;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.name {
+  position: relative;
+  top: 0px;
+  width: 40%;
+  height: 100%;
+  left: 0;
+  display: inline-block;
+  margin: 0;
+  padding-top: 0px;
+}
+
+.name span {
+  position: relative;
+  top: 100px;
+  width: 100%;
+  left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+  padding: 60px;
+  padding-left: 10px;
+  font-size: 150px;
+  text-align: justify;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: white;
+  font-family: "Sofia Pro",sans-serif;
 }
 
 /*mobile*/
