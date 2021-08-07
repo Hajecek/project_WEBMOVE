@@ -12,9 +12,11 @@ $(".current_page_item a").append("<span id='magic-line'></span>");
 var $magicLine = $("#magic-line");
 
 $magicLine
-  .width($(".current_page_item").width())
+
+.width($(".current_page_item").width())
+.data("origWidth", $magicLine.width())  
   .data("origLeft", $magicLine.position().left)
-  .data("origWidth", $magicLine.width());
+
 
 $("#example-one li")
   .find("a")
