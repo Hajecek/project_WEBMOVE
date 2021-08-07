@@ -17,7 +17,7 @@ $(function () {
          setTimeout(function(){  $('#navbar').css({ "background" : "transparent",}); }, 400);
     }
     else {
-         $('.logo_small_left').css({ "display" : "flex",});
+         $('.logo_small_left').css({ "display" : "inline",});
          setTimeout(function(){  $('#navbar').css({ "background" : "rgba(28, 35, 46, 0.363)",}); }, 100);
          
         
