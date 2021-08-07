@@ -7,7 +7,7 @@ $(function () {
   }); 
 
 
-
+/*navbar scroll*/
   $(window).scroll(function () {
     var height = $('body').height();
     var scrollTop = $(window).scrollTop();
@@ -22,4 +22,21 @@ $(function () {
          
         
    }
+});
+
+
+
+
+
+/* scroll to show aside navigation */
+
+$(window).scroll(function () {
+  var height = $('body').height();
+  var scrollTop = $(window).scrollTop();
+  if(scrollTop <= 200){
+        document.querySelector("body").style.width="100%";
+  }
+  else{
+    document.querySelector("body").style.width="100%";
+       }
 });
