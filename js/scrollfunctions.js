@@ -34,9 +34,37 @@ $(window).scroll(function () {
   var height = $('body').height();
   var scrollTop = $(window).scrollTop();
   if(scrollTop <= 200){
-        document.querySelector("body").style.width="100%";
+        document.querySelector("#aside_pc_nav").style.opacity="0";
+        document.querySelector("#aside_pc_nav").style.zIndex="-1";
   }
   else{
-    document.querySelector("body").style.width="100%";
+    document.querySelector("#aside_pc_nav").style.opacity="1";
+    document.querySelector("#aside_pc_nav").style.zIndex="9999";
+
        }
 });
+
+
+
+
+
+$(window).scroll(function () {
+  var height = $('body').height();
+  var scrollTop = $(window).scrollTop();
+  if(scrollTop >= 550){
+    $("#one").removeClass("active_aside");
+    $("#two").addClass("active_aside");
+  }
+  else{
+    $("#one").addClass("active_aside")
+    $("#two").removeClass("active_aside");
+       }
+});
+
+
+
+
+
+
+ 
+ 

@@ -3,7 +3,11 @@
 *{
     text-decoration: none;
     font-size: 18px;
+    z-index: 999;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 body{
     margin: 0;
@@ -12,6 +16,7 @@ body{
     height: 100%;
     overflow-x: hidden;
     transition: background-color 1s ease;
+    z-index: 99;
     
 }
 
@@ -235,10 +240,92 @@ body{
 }
 
 
+/*aside*/
+#aside_pc_nav{
+    position: fixed;top: 50%;right: -340px;
+    width: 250px;
+    height: auto;
+    background-color: rgba(22,22,22,.7);
+    z-index: 99999;
+    list-style-type: none;
+    margin-top: 0px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+     font-size: .8125rem;
+    transform: translate(calc(75px - 100%),-50%);
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+}
+
+#aside_pc_nav:hover{
+    right: -200px;
+}
+
+#aside_pc_nav:hover .content_aside li{
+    position: relative;left: 0px;
+    margin:0px;
+    width:50%;
+    height: auto;
+    padding: 15px;
+    margin-left: 28px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.137);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: "Oswald",sans-serif;
+    font-size: .8125rem;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    color: #acacac60;
+    display: flex;
+    justify-content: left;
+    transition:  all 0.5s ease-in-out;
+}
+
+#aside_pc_nav .content_aside li{
+    position: relative;left: 0px;
+    margin:0px;
+    width:0px;
+    height: auto;
+    padding: 15px;
+    margin-left: 28px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.137);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: "Oswald",sans-serif;
+    font-size: .8125rem;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    color: #acacac60;
+    display: flex;
+    justify-content: center;
+    transition:  all 0.5s ease-in-out;
+}
+
+.content_aside li:hover{
+    color: white !important;
+    
+}
+
+.content_aside li:hover span{
+    color: white !important;
+    
+}
 
 
+.active_aside {
+    border-bottom:1px solid red !important;
+    color: white !important;
+}
 
-
+.name_of_category{
+    position: absolute; left: 80px;
+    color: red;
+    color: #acacac60;
+    width: max-content;
+    font-size: .8125rem;
+    transition:  all 1.5s ease-in-out;
+}
 
 /*mobile*/
 @media(max-width:768px){
@@ -279,6 +366,10 @@ body{
     color: white;
     font-family: "Sofia Pro",sans-serif;
         font-size: 70px;
+    }
+
+    #aside_pc_nav{
+        display: none;
     }
 }
 
