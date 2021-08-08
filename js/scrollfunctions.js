@@ -48,23 +48,28 @@ $(window).scroll(function () {
 
 
 
+
+
+/*01*/
 $(window).scroll(function () {
   var height = $('body').height();
   var scrollTop = $(window).scrollTop();
   if(scrollTop > 550){
     $("#one").removeClass("active_aside");
     $("#two").addClass("active_aside");
+   
   }
   else{
-    $("#one").addClass("active_aside")
+    $("#one").addClass("active_aside");
     $("#two").removeClass("active_aside");
+    $("#three").removeClass("active_aside");
        }
 });
 
 
 
 
-
+/*02*/
 $(window).scroll(function () {
   var height = $('body').height();
   var scrollTop = $(window).scrollTop();
@@ -73,9 +78,38 @@ $(window).scroll(function () {
     $("#three").addClass("active_aside");
   }
   else{
-    $("#two").addClass("active_aside")
+    $("#two").addClass("active_aside");
     $("#three").removeClass("active_aside");
        }
 });
- 
- 
+
+
+
+
+/*03*/
+$(window).scroll(function () {
+  var height = $('body').height();
+  var scrollTop = $(window).scrollTop();
+  if(scrollTop > 2050){
+    $("#three").removeClass("active_aside");
+    $("#four").addClass("active_aside");
+  }
+  else{
+    $("#four").removeClass("active_aside");
+       }
+});
+
+
+
+/*04*/
+$(window).scroll(function () {
+  var height = $('body').height();
+  var scrollTop = $(window).scrollTop();
+  if(scrollTop > 3550){
+    $("#four").removeClass("active_aside");
+    $("#five").addClass("active_aside");
+  }
+  else{
+    $("#five").removeClass("active_aside");
+       }
+});
