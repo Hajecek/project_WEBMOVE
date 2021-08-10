@@ -256,6 +256,9 @@ body {
 /*section 1*/
 .section1 {
   background: url(../design.svg);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .section3 {

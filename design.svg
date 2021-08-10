@@ -2,10 +2,8 @@
 <rect x="1" width="1920" height="1080" fill="#224B74"/>
 <rect x="1" width="734" height="1080" fill="#1E3E5C"/>
 <rect x="1" y="634" width="1920" height="446" fill="url(#pattern0)"/>
-<g style="mix-blend-mode:luminosity">
 <rect x="130.729" y="762" width="157" height="203.271" transform="rotate(-90 130.729 762)" fill="url(#pattern1)"/>
 <rect y="762" width="157" height="203.271" transform="rotate(-90 0 762)" fill="url(#pattern2)"/>
-</g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="translate(0 -0.100751) scale(0.000625782 0.00269395)"/>
