@@ -35,8 +35,11 @@ body{
     text-decoration: none;
     transition: all 0.5s ease-in-out;
     z-index: 99999;
+    
+    
+}.scrollUp{
+transform: translateY(-90px)
 }
-
 .nav_positions{
     position: relative;
     display: flex;
@@ -447,9 +450,7 @@ span.webmove_number{
     }
 
 
-    #aside_pc_nav{
-        display: none;
-    }
+    
 }
 
 

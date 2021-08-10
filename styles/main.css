@@ -44,6 +44,11 @@ body {
   z-index: 99999;
 }
 
+.scrollUp {
+  -webkit-transform: translateY(-90px);
+          transform: translateY(-90px);
+}
+
 .nav_positions {
   position: relative;
   display: -webkit-box;
@@ -517,9 +522,6 @@ span.webmove_number {
     color: rgba(184, 184, 184, 0.575);
     letter-spacing: 8px;
     font-weight: 300;
-  }
-  #aside_pc_nav {
-    display: none;
   }
 }
 
