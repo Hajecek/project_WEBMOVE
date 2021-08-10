@@ -349,28 +349,6 @@ body {
 span.web {
   background: white;
   width: 0%;
-  -webkit-animation: text_linear_animation 2s;
-          animation: text_linear_animation 2s;
-}
-
-@-webkit-keyframes text_linear_animation {
-  0% {
-    background: white;
-    width: 100%;
-  }
-  100% {
-    display: none;
-  }
-}
-
-@keyframes text_linear_animation {
-  0% {
-    background: white;
-    width: 100%;
-  }
-  100% {
-    display: none;
-  }
 }
 
 span.webmove_number {
