@@ -58,6 +58,15 @@ transform: translateY(-90px)
     width: 70px;
     height: auto;
     text-decoration: none;
+    animation-name: logo_animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo_animation{
+    0%{left: 0;}
+    50%{left: 5px;}
+    100%{left: 0;}
 }
 
 .menu {
@@ -204,7 +213,6 @@ background-color: rgba(0, 255, 213, 0.432) !important;
     height: 100vh;
     justify-content: center;
     align-items: center;
-   background: black;
    z-index: 0;
 }
 
@@ -212,9 +220,8 @@ background-color: rgba(0, 255, 213, 0.432) !important;
 
 .section1{
     background: url(../design.svg);
-    background-size: 100vw;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 100%;
 }
 
 
