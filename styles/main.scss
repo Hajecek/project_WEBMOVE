@@ -106,7 +106,27 @@ transform: translateY(-90px)
     margin-left: -4px;
 }
 
+.sup_reference{
+    position: relative;
+    top: 20px;
+    right: 8px;
+    background: rgba(0, 119, 255, 0.582);
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 10px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    font-weight: 700;
+}
 
+#example-one li:nth-child(3):hover .sup_reference{
+background-color: rgba(0, 255, 213, 0.432) !important;
+
+}
 
 .rotate:hover{
     animation-name: rotate_settings;
@@ -148,6 +168,7 @@ transform: translateY(-90px)
     text-transform: uppercase;
     font-weight: 500;
     color: white;
+    margin-top: -3px;
     
    
 }
@@ -397,6 +418,7 @@ span.webmove_number{
     .content-middle{
         width: 100%;
         overflow: hidden;
+        top: 10px;
     }
 
     .menu{
