@@ -313,6 +313,7 @@ body {
 .name {
   position: relative;
   top: 0px;
+  left: 0px;
   width: 40%;
   height: 100%;
   left: 0;
@@ -320,6 +321,7 @@ body {
   margin: 0;
   padding-top: 0px;
   z-index: 4;
+  padding: 0;
 }
 
 .name span {
@@ -340,6 +342,35 @@ body {
   font-weight: 900;
   color: white;
   font-family: "Sofia Pro",sans-serif;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+}
+
+span.web {
+  background: white;
+  width: 0%;
+  -webkit-animation: text_linear_animation 2s;
+          animation: text_linear_animation 2s;
+}
+
+@-webkit-keyframes text_linear_animation {
+  0% {
+    background: white;
+    width: 100%;
+  }
+  100% {
+    display: none;
+  }
+}
+
+@keyframes text_linear_animation {
+  0% {
+    background: white;
+    width: 100%;
+  }
+  100% {
+    display: none;
+  }
 }
 
 span.webmove_number {

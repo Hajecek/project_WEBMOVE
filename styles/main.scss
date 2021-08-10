@@ -244,7 +244,7 @@ background-color: rgba(0, 255, 213, 0.432) !important;
 }
 
 .name {
-   position: relative;top: 0px;
+   position: relative;top: 0px;left: 0px;
    width: 40%;
    height: 100%;
    left: 0;
@@ -252,6 +252,7 @@ background-color: rgba(0, 255, 213, 0.432) !important;
    margin: 0;
    padding-top: 0px;
    z-index: 4;
+   padding: 0;
 }
 
 
@@ -271,7 +272,19 @@ background-color: rgba(0, 255, 213, 0.432) !important;
     font-weight: 900;
     color: white;
     font-family: "Sofia Pro",sans-serif;
+    transition: all 2s linear;
+   
     
+}
+
+span.web{
+    background: white;width: 0%;
+    animation: text_linear_animation 2s ;
+}
+
+@keyframes text_linear_animation{
+    0%{background: white;width: 100%};
+    100%{display: none;}
 }
 
 
