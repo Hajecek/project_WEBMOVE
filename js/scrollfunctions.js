@@ -11,7 +11,7 @@ $(function () {
   $(window).scroll(function () {
     var height = $('body').height();
     var scrollTop = $(window).scrollTop();
-    if(scrollTop <= 0){
+    if(scrollTop == 0){
          $('.logo_small_left').css({ "display" : "inline",});
          $('.navbar-fixed-top').css({ "position" : "fixed", "top" : "0px"});
          setTimeout(function(){  $('#navbar').css({ "background" : "transparent",}); }, 400);
@@ -23,6 +23,13 @@ $(function () {
         
    }
 });
+
+
+
+
+
+
+
 
 
 

@@ -42,7 +42,7 @@ body {
   text-decoration: none;
   -webkit-transition: top 0.4s;
   transition: top 0.4s;
-  z-index: 3;
+  z-index: 99999;
 }
 
 .nav_positions {
@@ -200,7 +200,7 @@ body {
 }
 
 .navbar-fixed-top.scrolled {
-  background-color: rgba(28, 35, 46, 0.363) !important;
+  background-color: rgba(31, 36, 47, 0.7) !important;
 }
 
 .navbar-fixed-top.scrolled .nav-link {
@@ -227,6 +227,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: black;
+  z-index: -1;
 }
 
 /*section 1*/
