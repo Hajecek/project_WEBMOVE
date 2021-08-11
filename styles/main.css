@@ -335,20 +335,36 @@ body {
   margin: 0px;
   padding: 30px;
   padding-left: 10px;
-  font-size: 80px;
+  font-size: 85px;
   text-align: justify;
   line-height: 20px;
   text-transform: uppercase;
   font-weight: 900;
   color: white;
   font-family: "Sofia Pro",sans-serif;
-  -webkit-transition: all 2s linear;
-  transition: all 2s linear;
+  -webkit-transition: width 1s linear;
+  transition: width 1s linear;
 }
 
-span.web {
+span.webmove {
   background: white;
   width: 0%;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+span.for {
+  background: white;
+  width: 0%;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+span.future {
+  background: white;
+  width: 0%;
+  -webkit-transition: 800ms;
+  transition: 800ms;
 }
 
 span.webmove_number {

@@ -1,7 +1,50 @@
 $(document).ready(function () {
 
-document.querySelector("span.web").style.width="100%";
-setTimeout(function(){ document.querySelector("span.web").style.width="0%"; }, 2000);
+    document.querySelector("span.for").style.width="0%";
+    document.querySelector("span.for").style.background="none";
 
+
+if(document.querySelector("span.for").style.width="0%"){
+    setTimeout(function(){ document.querySelector("span.for").style.width="35%"; }, 800);
+    document.querySelector("span.for").style.background="white";
+} 
+
+setTimeout(function(){ document.querySelector("span.for").style.width="0%"; }, 2000);
+setTimeout(function(){ document.querySelector("span.for").style.background="none"; }, 2300);
+
+})
+
+
+$(document).ready(function () {
+
+    document.querySelector("span.webmove").style.width="0%";
+    document.querySelector("span.webmove").style.background="none";
+
+
+if(document.querySelector("span.webmove").style.width="0%"){
+    setTimeout(function(){ document.querySelector("span.webmove").style.width="88%"; }, 600);
+    document.querySelector("span.webmove").style.background="white";
+} 
+
+setTimeout(function(){ document.querySelector("span.webmove").style.width="0%"; }, 2000);
+setTimeout(function(){ document.querySelector("span.webmove").style.background="none"; }, 2200);
+
+})
+
+
+
+$(document).ready(function () {
+
+    document.querySelector("span.future").style.width="0%";
+    document.querySelector("span.future").style.background="none";
+
+
+if(document.querySelector("span.future").style.width="0%"){
+    setTimeout(function(){ document.querySelector("span.future").style.width="75%"; }, 400);
+    document.querySelector("span.future").style.background="white";
+} 
+
+setTimeout(function(){ document.querySelector("span.future").style.width="0%"; }, 2000);
+setTimeout(function(){ document.querySelector("span.future").style.background="none"; }, 2300);
 
 })
