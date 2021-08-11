@@ -577,19 +577,19 @@ span.webmove_number {
     color: red;
   }
   span.webmove {
-    background: white;
+    background: transparent !important;
     width: 100% !important;
     -webkit-transition: 800ms;
     transition: 800ms;
   }
   span.for {
-    background: white;
+    background: transparent !important;
     width: 100% !important;
     -webkit-transition: 800ms;
     transition: 800ms;
   }
   span.future {
-    background: white;
+    background: transparent !important;
     width: 100% !important;
     -webkit-transition: 800ms;
     transition: 800ms;
