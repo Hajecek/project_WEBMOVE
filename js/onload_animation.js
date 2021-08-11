@@ -9,6 +9,9 @@ if(document.querySelector("span.for").style.width="0%"){
     document.querySelector("span.for").style.background="white";
 } 
 
+
+
+
 setTimeout(function(){ document.querySelector("span.for").style.width="0%"; }, 2000);
 setTimeout(function(){ document.querySelector("span.for").style.background="none"; }, 2300);
 

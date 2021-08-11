@@ -576,6 +576,24 @@ span.webmove_number {
   .section1 {
     color: red;
   }
+  span.webmove {
+    background: white;
+    width: 100% !important;
+    -webkit-transition: 800ms;
+    transition: 800ms;
+  }
+  span.for {
+    background: white;
+    width: 100% !important;
+    -webkit-transition: 800ms;
+    transition: 800ms;
+  }
+  span.future {
+    background: white;
+    width: 100% !important;
+    -webkit-transition: 800ms;
+    transition: 800ms;
+  }
   .name {
     width: 100%;
   }
