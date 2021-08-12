@@ -314,7 +314,7 @@ body {
   position: relative;
   top: 0px;
   left: 0px;
-  width: 40%;
+  width: 45%;
   height: 100%;
   left: 0;
   display: inline-block;
@@ -340,7 +340,7 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   font-weight: 900;
-  color: white;
+  color: rgba(255, 255, 255, 0);
   font-family: "Sofia Pro",sans-serif;
   -webkit-transition: width 1s linear;
   transition: width 1s linear;
@@ -513,7 +513,7 @@ span.webmove_number {
   width: auto;
   -ms-flex-line-pack: center;
       align-content: center;
-  width: 180px;
+  width: 150px;
 }
 
 #datum-1 {
@@ -630,4 +630,13 @@ span.webmove_number {
 }
 
 /*konec mobile*/
+/*custom*/
+@media (width: 1342px), (height: 879px) {
+  .name span {
+    font-size: 63px;
+  }
+  span.webmove_number {
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

@@ -7,6 +7,7 @@ $(document).ready(function () {
 if(document.querySelector("span.for").style.width="0%"){
     setTimeout(function(){ document.querySelector("span.for").style.width="35%"; }, 800);
     document.querySelector("span.for").style.background="white";
+    
 } 
 
 
@@ -14,6 +15,7 @@ if(document.querySelector("span.for").style.width="0%"){
 
 setTimeout(function(){ document.querySelector("span.for").style.width="0%"; }, 2000);
 setTimeout(function(){ document.querySelector("span.for").style.background="none"; }, 2300);
+setTimeout(function(){ document.querySelector("span.for").style.color="white"; }, 1800);
 
 })
 
@@ -31,6 +33,8 @@ if(document.querySelector("span.webmove").style.width="0%"){
 
 setTimeout(function(){ document.querySelector("span.webmove").style.width="0%"; }, 2000);
 setTimeout(function(){ document.querySelector("span.webmove").style.background="none"; }, 2200);
+setTimeout(function(){ document.querySelector("span.webmove").style.color="white"; }, 1800);
+
 
 })
 
@@ -49,5 +53,6 @@ if(document.querySelector("span.future").style.width="0%"){
 
 setTimeout(function(){ document.querySelector("span.future").style.width="0%"; }, 2000);
 setTimeout(function(){ document.querySelector("span.future").style.background="none"; }, 2300);
+setTimeout(function(){ document.querySelector("span.future").style.color="white"; }, 1800);
 
 })
