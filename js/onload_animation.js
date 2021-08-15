@@ -1,7 +1,12 @@
+
 $(document).ready(function () {
 
     document.querySelector("span.for").style.width="0%";
     document.querySelector("span.for").style.background="none";
+    document.querySelector(".line").style.height="150px";
+    document.querySelector("#navbar").style.top="-90px"
+
+  
 
 
 if(document.querySelector("span.for").style.width="0%"){
@@ -11,7 +16,17 @@ if(document.querySelector("span.for").style.width="0%"){
 } 
 
 
+if(document.querySelector("#navbar").style.top="-90px"){
+    setTimeout(function(){ document.querySelector("#navbar").style.top="0px"; }, 1400);
+    
+} 
 
+
+
+if (document.querySelector(".line").style.height="150px"){
+setTimeout(function(){ document.querySelector(".line").style.height="0px"; }, 800);
+setTimeout(function(){ document.querySelector(".line").style.height="150px"; }, 1800);
+}
 
 setTimeout(function(){ document.querySelector("span.for").style.width="0%"; }, 2000);
 setTimeout(function(){ document.querySelector("span.for").style.background="none"; }, 2300);
@@ -40,6 +55,8 @@ setTimeout(function(){ document.querySelector("span.webmove").style.color="white
 
 
 
+
+
 $(document).ready(function () {
 
     document.querySelector("span.future").style.width="0%";
@@ -56,3 +73,6 @@ setTimeout(function(){ document.querySelector("span.future").style.background="n
 setTimeout(function(){ document.querySelector("span.future").style.color="white"; }, 1800);
 
 })
+
+
+

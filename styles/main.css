@@ -28,7 +28,7 @@ body {
 /*nav*/
 #navbar {
   position: fixed;
-  top: 0;
+  top: -90px;
   width: 100%;
   height: 80px;
   display: -webkit-box;
@@ -303,11 +303,16 @@ body {
   width: 70%;
   height: 80%;
   background: rgba(255, 0, 0, 0.103);
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .name {
@@ -322,6 +327,44 @@ body {
   padding-top: 0px;
   z-index: 4;
   padding: 0;
+}
+
+.video_intro_position {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding-top: 0px;
+  z-index: 4;
+  padding: 0;
+  background: rgba(255, 0, 0, 0.418);
+}
+
+.video img {
+  width: 50%;
+  height: auto;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .name span {
@@ -498,15 +541,16 @@ span.webmove_number {
 .date_clock {
   margin: 0px;
   margin-left: 10px;
+  margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 80px;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -548,12 +592,108 @@ span.webmove_number {
   width: 100%;
 }
 
+/*links*/
+#links {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  width: 50px;
+  height: 450px;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.line {
+  position: absolute;
+  bottom: 20px;
+  width: 2px;
+  height: 150px;
+  background: #0467d8;
+  -webkit-transition: 1800ms;
+  transition: 1800ms;
+}
+
+#links li {
+  margin: 8px;
+  font-size: 20px;
+}
+
+#links li i {
+  font-size: 30px;
+  color: #d1d1d1;
+}
+
+.name_of_icon {
+  position: absolute;
+  left: -200px;
+  margin-top: 8.5px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-family: "Oswald",sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  width: 100px;
+}
+
+#links li:hover .name_of_icon {
+  left: 50px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* end of links*/
 /*mobile*/
 @media (max-width: 768px) {
   .content-middle {
     width: 100%;
     overflow: hidden;
-    top: 10px;
+    top: 4px;
+  }
+  .video_intro_position {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    height: 50%;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    padding-top: 0px;
+    z-index: 4;
+    padding: 0;
+    background: none;
+  }
+  .video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+  }
+  .video img {
+    width: 30%;
+    height: auto;
   }
   .menu {
     display: none;
@@ -565,6 +705,8 @@ span.webmove_number {
     width: 50px;
     height: auto;
     text-decoration: none;
+    -webkit-animation: none;
+            animation: none;
   }
   .nav_positions {
     width: 90%;
@@ -596,6 +738,7 @@ span.webmove_number {
   }
   .name {
     width: 100%;
+    height: 89%;
   }
   .name span {
     position: relative;
