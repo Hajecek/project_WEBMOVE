@@ -29,7 +29,7 @@ showTime();
 
 
 
-function ahojky(){
+/*function ahojky(){
     $(".home").addClass("animate__animated animate__fadeOut animate__delay-2s");
     document.querySelector(".onas").style.display="block";
     $(".group li:nth-child(2)").addClass("active");
@@ -43,3 +43,5 @@ function domu(){
     $(".home").addClass("animate__animated animate__fadeIn");
 
 }
+
+*/
