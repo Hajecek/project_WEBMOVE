@@ -22,3 +22,19 @@ function showTime(){
 }
 
 showTime();
+
+
+
+
+
+
+
+function ahojky(){
+    document.querySelector(".home").style.display="none";
+    $(".group li:nth-child(1)").removeClass("active");
+    document.querySelector(".onas").style.display="block";
+    $(".group li:nth-child(2)").addClass("active");
+    return $(".group li:nth-child(2)").addClass("active");
+
+
+}

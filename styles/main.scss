@@ -18,6 +18,10 @@ body{
     
 }
 
+body::-webkit-scrollbar {
+    display: none;
+  }
+
 .navbar-fixed-top{
     position: fixed;top: 0px;
     transition: background-color 1s ease-in-out;
@@ -40,6 +44,13 @@ body{
 }.scrollUp{
 transform: translateY(-90px)
 }
+
+.scrollleft{
+    transform: translateX(-90px);
+    transition: all 0.5s ease-in-out;
+    }
+
+
 .nav_positions{
     position: relative;
     display: flex;
@@ -480,6 +491,7 @@ span.webmove_number{
     justify-content: center;
     align-items: center;
     list-style-type: none;
+    transition: all 0.5s ease-in-out;
 }
 
 .line{

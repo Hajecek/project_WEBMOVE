@@ -23,6 +23,33 @@ $(document).ready(function () {
 });
 
 
+
+/*links function*/
+$(document).ready(function () {
+  
+  'use strict';
+  
+   var c, currentScrollTop = 1000,
+       navbar = $('#links');
+
+   $(window).scroll(function () {
+      var a = $(window).scrollTop();
+      var b = navbar.height();
+     
+      currentScrollTop = a;
+     
+      if (c < currentScrollTop && a > b + b) {
+        navbar.addClass("scrollleft");
+      } else if (c > currentScrollTop && !(a <= b)) {
+        navbar.removeClass("scrollleft");
+      }
+      c = currentScrollTop;
+  });
+  
+});
+
+
+
 /*navbar scroll*/
   $(window).scroll(function () {
     var height = $('body').height();
