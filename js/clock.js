@@ -30,11 +30,16 @@ showTime();
 
 
 function ahojky(){
-    document.querySelector(".home").style.display="none";
-    $(".group li:nth-child(1)").removeClass("active");
+    $(".home").addClass("animate__animated animate__fadeOut animate__delay-2s");
     document.querySelector(".onas").style.display="block";
     $(".group li:nth-child(2)").addClass("active");
-    return $(".group li:nth-child(2)").addClass("active");
 
+
+}
+
+
+function domu(){
+    $(".home").removeClass("animate__animated animate__fadeOut animate__delay-2s");
+    $(".home").addClass("animate__animated animate__fadeIn");
 
 }
