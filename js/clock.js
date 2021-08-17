@@ -26,22 +26,15 @@ showTime();
 
 
 
+$(function() {
+    $('.group li:nth-child(1)').mouseenter(function() {
+      $('.onas_show').css("right","20px");
+    }).mouseleave(function () {
+      $('.onas_show').css("right","-50%");
+    });
+  });
+  
 
 
 
-function ahojky(){
-    $(".home").addClass("animate__animated animate__fadeOut animate__delay-2s");
-    document.querySelector(".onas").style.display="block";
-    $(".group li:nth-child(1)").removeClass("active");
-    $(".group li:nth-child(2)").addClass("active");
-
-
-}
-
-
-function domu(){
-    $(".home").removeClass("animate__animated animate__fadeOut animate__delay-2s");
-    $(".home").addClass("animate__animated animate__fadeIn");
-
-}
 

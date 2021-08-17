@@ -99,9 +99,7 @@ transform: translateY(-90px)
     bottom: -2px; 
     left: 0;
 }
-.active a { 
-	color: white !important; 
-}
+
 
 
 #example-one a { 
@@ -115,6 +113,16 @@ transform: translateY(-90px)
     overflow: hidden;
     padding: 30px 15px;
 }
+
+.active a { 
+	color: white !important; 
+}
+
+#MyClockDisplay{
+    color: #bbb !important; 
+}
+
+
 #example-one li { 
     width: auto;
     overflow: hidden;
@@ -457,13 +465,15 @@ span.webmove_number{
   width: 150px;
 }
 
+
+
 #datum-1{
     margin:0px;
   flex-wrap: wrap;
   justify-content: left;
   align-items: center;
   align-content: center;
-  color: #ffffffe7;
+  color: #cacacae7 !important;
 }
 
 .date_clock li{
@@ -529,6 +539,30 @@ span.webmove_number{
     transition:  all 0.5s ease-in-out;
 }
 /* end of links*/
+
+
+.onas_show{
+    width: auto;
+    height: 300px;
+    background: red;
+    position: fixed;
+    right: -50%;
+    bottom: 20px;
+    display: flex;
+    z-index: 99;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
