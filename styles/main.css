@@ -301,7 +301,8 @@ body::-webkit-scrollbar {
 .section1 {
   background: url(../design.svg);
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-size: 100%;
+  background-position: center;
 }
 
 .section3 {

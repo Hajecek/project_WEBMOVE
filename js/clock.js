@@ -25,14 +25,16 @@ showTime();
 
 
 
-
+/*SHOW PREIMAGE*/
 $(function() {
     $('.group li:nth-child(1)').mouseenter(function() {
-      $('.onas_show').css("right","20px");
+      $('.onas_show').css("right","20px").css( "bottom","20px");
     }).mouseleave(function () {
-      $('.onas_show').css("right","-50%");
+    $('.onas_show').css("bottom","-50%");
     });
   });
+
+
   
 
 

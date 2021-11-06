@@ -77,6 +77,7 @@ function ahojky(){
   $(".group li:nth-child(1)").removeClass("active");
   $(".onas").addClass("animate__animated animate__fadeIn");
   $(".hh").addClass("animate__animated animate__fadeInLeft animate__delay-2s");
+  $(".name").addClass("animate__animated animate__fadeInDown animate__delay-0.5s");
 document.querySelector(".home").style.display="none";
 $(".group li:nth-child(2)").addClass("active");
 document.querySelector(".onas").style.display="block";
