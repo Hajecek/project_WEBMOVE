@@ -1,6 +1,10 @@
 /*mobile*/
 @media (max-width: 768px) {
-    body {
+  html{
+    overflow-x: scroll;
+  }  
+  
+  body {
       background: white;
     }
     .content-middle {
@@ -234,7 +238,6 @@
     }
 
     html.active{
-      height: 100%;
       overflow: hidden !important;
     }
 

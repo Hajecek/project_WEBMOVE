@@ -1,5 +1,8 @@
 /*mobile*/
 @media (max-width: 768px) {
+  html {
+    overflow-x: scroll;
+  }
   body {
     background: white;
   }
@@ -244,7 +247,6 @@
     transition: 1s;
   }
   html.active {
-    height: 100%;
     overflow: hidden !important;
   }
   /*mobile menu*/
