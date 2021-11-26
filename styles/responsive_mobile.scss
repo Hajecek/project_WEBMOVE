@@ -229,9 +229,10 @@
     .menu_mobile_onclick{
       position: absolute;left: -850px;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       background-color: red;
       transition: 0.5s;
+      overflow: hidden !important;
     }
 
     .menu_mobile_onclick.active{

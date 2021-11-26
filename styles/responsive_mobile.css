@@ -234,10 +234,11 @@
     position: absolute;
     left: -850px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: red;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    overflow: hidden !important;
   }
   .menu_mobile_onclick.active {
     -webkit-transform: translateY(0px);
