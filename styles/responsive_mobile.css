@@ -149,14 +149,102 @@
     align-items: center;
   }
   .toggle {
-    padding: 5px;
-    width: 29px;
-    height: 29px;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
     margin: 0;
     background: #6089e2;
     border-radius: 7px;
     -webkit-box-shadow: 3px 2px 99px 18px #34399e;
     box-shadow: 3px 2px 99px 18px #34399e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .toggle span {
+    position: absolute;
+    width: 29px;
+    height: 4px;
+    background-color: #dfdfdf;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .toggle span:nth-child(1) {
+    -webkit-transform: translateY(-11px);
+            transform: translateY(-11px);
+    width: 20px;
+    margin-right: 10px;
+  }
+  .toggle span:nth-child(2) {
+    -webkit-transform: translateY(11px);
+            transform: translateY(11px);
+    width: 15px;
+    margin-right: 12px;
+  }
+  .toggle.active span:nth-child(3) {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px);
+  }
+  .toggle.active span:nth-child(1) {
+    width: 29px;
+    -webkit-transform: translateY(0px) rotate(45deg);
+            transform: translateY(0px) rotate(45deg);
+    -webkit-transition-delay: 0.125s;
+            transition-delay: 0.125s;
+  }
+  .toggle.active span:nth-child(2) {
+    width: 29px;
+    -webkit-transform: translateY(0px) rotate(315deg);
+            transform: translateY(0px) rotate(315deg);
+    -webkit-transition-delay: 0.25s;
+            transition-delay: 0.25s;
+  }
+  .toggle.active.toggle {
+    background: #34399e00;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .menu_mobile_onclick {
+    position: absolute;
+    left: -850px;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .menu_mobile_onclick.active {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 0px;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  body.active {
+    overflow: hidden;
   }
   /*mobile menu*/
 }
