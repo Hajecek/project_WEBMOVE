@@ -21,8 +21,8 @@
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: 0 auto;
     padding-top: 0px;
     z-index: 4;
@@ -49,7 +49,7 @@
     height: auto;
     text-decoration: none;
     -webkit-animation: none;
-            animation: none;
+    animation: none;
   }
   .nav_positions {
     width: 90%;
@@ -95,8 +95,8 @@
     padding: 15px;
     padding-left: 0px;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     line-height: 15px;
     text-align: center;
     text-transform: uppercase;
@@ -142,11 +142,11 @@
     margin: 0;
     height: auto;
     -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
+    -ms-flex-pack: right;
+    justify-content: right;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .toggle {
     padding: 5px;
@@ -155,7 +155,7 @@
     background: #7bb9ff;
     border-radius: 7px;
     -webkit-box-shadow: 3px 2px 99px 18px #34399e;
-            box-shadow: 3px 2px 99px 18px #34399e;
+    box-shadow: 3px 2px 99px 18px #34399e;
   }
   /*mobile menu*/
 }
