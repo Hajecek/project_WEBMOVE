@@ -1,8 +1,12 @@
 /*mobile*/
 @media (max-width: 768px) {
   html{
-    overflow-x: scroll;
+    overflow: scroll;
   }  
+
+  html.active{
+    overflow: hidden;
+  } 
   
   body {
       background: white;
@@ -225,7 +229,7 @@
     .menu_mobile_onclick{
       position: absolute;left: -850px;
       width: 100%;
-      height: 100vh;
+      height: 100%;
       background-color: red;
       transition: 0.5s;
     }
@@ -233,13 +237,12 @@
     .menu_mobile_onclick.active{
       transform: translateY(0px) ;
       display: flex;
+      position: fixed;
       left: 0px;
       transition: 1s;
-    }
-
-    html.active{
       overflow: hidden !important;
     }
+
 
     /*mobile menu*/
   }
