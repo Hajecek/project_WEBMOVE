@@ -172,7 +172,7 @@
               align-items: center;
               cursor: pointer;
               overflow: hidden;
-              z-index: 1;
+              z-index: 8001;
              
           
               
@@ -236,12 +236,13 @@
     }
 
     .menu_mobile_onclick.active{
-      transform: translateY(0px) ;
+      transform: translateY(0px);
       display: flex;
       position: fixed;
       left: 0px;
       transition: 1s;
       overflow: hidden !important;
+      z-index: 8000 !important;
     }
 
 
