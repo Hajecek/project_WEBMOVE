@@ -694,6 +694,10 @@ span.webmove_number {
   display: none;
 }
 
+.menu_mobile_onclick{
+  display: none;
+}
+
 /*custom*/
 @media (width: 1342px), (height: 879px) {
   .name span {

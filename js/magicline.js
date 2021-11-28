@@ -72,6 +72,11 @@ $slidingMenu.find('li a').hover(function () {
 
 
 
+
+
+
+
+
 /*SHOW SECTION ONAS*/
 function ahojky(){
   $(".group li:nth-child(1)").removeClass("active");
@@ -81,6 +86,10 @@ function ahojky(){
 document.querySelector(".home").style.display="none";
 $(".group li:nth-child(2)").addClass("active");
 document.querySelector(".onas").style.display="block";
+
+
+$(".li_one").removeClass("active");
+$(".li_two").addClass("active");
 
 }
 
@@ -93,5 +102,10 @@ function domu(){
   $(".group li:nth-child(1)").addClass("active");
   $(".home").addClass("animate__animated animate__fadeIn");
   document.querySelector(".home").style.display="block";
+ 
+  
+
+  $(".li_one").addClass("active");
+  $(".li_two").removeClass("active");
 
 }
