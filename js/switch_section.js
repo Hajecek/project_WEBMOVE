@@ -9,7 +9,7 @@ function ahojky(){
   $(".group li:nth-child(2)").addClass("active");
   document.querySelector(".preload_section").style.display="flex";
   
-  const timeout_loading = setTimeout(myGreeting, 1500);
+  const timeout_loading = setTimeout(myGreeting, 1200);
 function myGreeting() {
     document.querySelector(".onas").style.display="block";
     document.querySelector(".preload_section").style.display="none";
@@ -32,10 +32,18 @@ function myGreeting() {
     document.querySelector(".onas").style.display="none";
     $(".group li:nth-child(1)").addClass("active");
     $(".home").addClass("animate__animated animate__fadeIn");
-    document.querySelector(".home").style.display="block";
-   
-    
+    document.querySelector(".preload_section").style.display="flex";
+   document.querySelector("body").style.overflow="hidden";
+    const timeout_loading = setTimeout(myGreeting, 1200);
+    function myGreeting() {
+        document.querySelector(".home").style.display="block";
+        document.querySelector(".preload_section").style.display="none";
+        document.querySelector("body").style.overflow="scroll";
+        return timeout_loading();
+    }
   
+
+
     $(".li_one").addClass("active");
     $(".li_two").removeClass("active");
   
