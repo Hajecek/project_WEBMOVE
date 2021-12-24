@@ -218,14 +218,13 @@
     .toggle.active span:nth-child(3){
       position: fixed;
     bottom: 30%;
-    right: 50%;
-    -webkit-transform: translate(50%, -50%);
-    transform: translate(50%, 0%);
+    right: 0%;
+ 
     width: 100%;
     border-radius: 0px;
     height: auto;
     background: none;
-  
+   
    
     
   
@@ -241,12 +240,14 @@
       width: 29px;
       transform: translateY(0px) rotate(45deg);
       transition-delay: 0.125s;
+      -webkit-transition-delay: 0.125s;
     }
 
     .toggle.active span:nth-child(2){
       width: 29px;
       transform: translateY(0px) rotate(315deg);
       transition-delay: 0.25s;
+      -webkit-transition-delay: 0.25s;
     }
 
     .toggle.active.toggle{
